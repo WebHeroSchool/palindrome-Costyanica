@@ -1,14 +1,15 @@
 function palindrome(str) {
 
-  var lengthString = str.length;
-  var middleString = lengthString/2;
+  var len = str.length;
+  var mid = Math.floor(len/2);
 
-  for ( var i = 0; i < middleString; i++) {
-    if ( str[i] !== str[lengthString - 1 -i]) {
-      return false;
+    for ( var i = 0; i < mid; i++ ) {
+        if (str[i] !== str[len - 1 - i]) {
+            return false;
+        }
     }
-  }
-  return true;
+
+    return true;
 }
 
 module.exports = palindrome;
