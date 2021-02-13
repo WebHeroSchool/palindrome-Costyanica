@@ -6,11 +6,11 @@ function palindrome(str) {
   
       for ( var i = 0; i < mid; i++ ) {
           if (newStr[i] !== newStr[len - 1 - i]) {
-              return false;
+              return 'false';
           }
       }
   
-      return true;
+      return 'true';
   }
 
 module.exports = palindrome;
